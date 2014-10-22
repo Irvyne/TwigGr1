@@ -1,0 +1,15 @@
+{
+    "name": "irvyne/twig-a2",
+    "description": "My first Twig Engine Template Biatch!",
+    "license": "MIT",
+    "require": {
+        "twig/twig": "~1.0"
+    },
+    "authors": [
+        {
+            "name": "Thibaud BARDIN",
+            "email": "thibaud.bardin@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
