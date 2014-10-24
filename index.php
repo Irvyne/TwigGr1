@@ -19,16 +19,16 @@ $twig = new Twig_Environment($loader, [
 // PDO
 
 try {
-    $pdo = new PDO('mysql:host=localhost;dbname=blog', 'rooot', 'toor');
+    $pdo = new PDO('mysql:host=localhost;dbname=blog', 'root', 'toor');
 } catch(PDOException $e) {
     @mail('thibaud.bardin+iim@gmail.com', 'BDD Error', $e->getMessage());
     throw new PDOException('BDD Error');
 }
 
-die;
-
-//$articles;
+$sql = 'SELECT * FROM article';
+$pdoStmt = $pdo->query($sql);
+$articles = $pdoStmt->fetchAll(PDO::FETCH_OBJ);
 
 echo $twig->render('article.html.twig', [
-    'article' => $article,
+    'articles' => $articles,
 ]);
