@@ -17,7 +17,6 @@ $twig = new Twig_Environment($loader, [
 ]);
 
 // PDO
-
 try {
     $pdo = new PDO('mysql:host=localhost;dbname=blog', 'root', 'toor');
 } catch(PDOException $e) {
@@ -31,4 +30,5 @@ $articles = $pdoStmt->fetchAll(PDO::FETCH_OBJ);
 
 echo $twig->render('article.html.twig', [
     'articles' => $articles,
+    'kenny' => ['sick' => false],
 ]);

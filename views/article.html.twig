@@ -1,3 +1,11 @@
-{% for article in articles %}
-    <h1>{{ article.title }}</h1>
-{% endfor %}
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    {{ parent() }} - My Articles
+{% endblock %}
+
+{% block content %}
+    {% for article in articles %}
+        <h1>{{ article.title }}</h1>
+    {% endfor %}
+{% endblock %}
