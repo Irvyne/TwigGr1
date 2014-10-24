@@ -16,10 +16,18 @@ $twig = new Twig_Environment($loader, [
     //'cache' => null,
 ]);
 
-$article = [
-    'name' => 'zefzef',
-    'content' => 'zefzefzefger ergerg',
-];
+// PDO
+
+try {
+    $pdo = new PDO('mysql:host=localhost;dbname=blog', 'rooot', 'toor');
+} catch(PDOException $e) {
+    @mail('thibaud.bardin+iim@gmail.com', 'BDD Error', $e->getMessage());
+    throw new PDOException('BDD Error');
+}
+
+die;
+
+//$articles;
 
 echo $twig->render('article.html.twig', [
     'article' => $article,
