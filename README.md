@@ -2,7 +2,7 @@
 
 ## Instructions
 
-* Transform parts of the blog at (A2_PHP_MYSQL_GR2)[https://github.com/Irvyne/A2_PHP_MYSQL_GR2] in twig
+* Transform parts of the blog at [A2_PHP_MYSQL_GR2](https://github.com/Irvyne/A2_PHP_MYSQL_GR2) in twig
 * Date: Monday 4th November by 23:59 (I want u to take ur time to understand REALLY what ur doing)
 * Clone (A2_PHP_MYSQL_GR2)[https://github.com/Irvyne/A2_PHP_MYSQL_GR2]
 * Create your own repository on GitHub (https://github.com/YourUsername/A2_PHP_MYSQL_GR1)
